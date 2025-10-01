@@ -1,0 +1,414 @@
+.demo_banner_area{
+    background-image: linear-gradient( 30deg, #f2fbfd 0%, rgb(245,253,255) 100%);
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    min-height: 620px;
+    overflow: hidden;
+    height: 100vh;
+    @media (min-width: 1200px) and (max-width: 1366px){
+        height: 100vh;
+        min-height: auto;
+    }
+    .one{
+        left: 80px;
+        top: 200px;
+    }
+    .two{
+        left: 50%;
+        bottom: 240px;
+    }
+    .three{
+        left: 155px;
+        top: 400px;
+    }
+    .four{
+        right: 620px;
+        top: 410px;
+    }
+    .five{
+        left: 450px;
+        bottom: 180px
+    }
+    .six{
+        right: 550px;
+        top: 50%;
+        margin-top: -20px;
+    }
+    .seven{
+        right: 40px;
+        bottom: 120px;
+    }
+    .eight{
+        left: 45%;
+        top: 190px;
+    }
+    .nine{
+        left: 30%;
+        top: 250px;
+    }
+    .ten{
+        left: 150px;
+        bottom: 110px
+    }
+    .eleven{
+        right: 130px;
+        top: 100px;
+    }
+    .twelve{
+        right: 375px;
+        bottom: 241px;
+    }
+    .thirteen{
+        right: 240px;
+        bottom: 100px;
+    }
+}
+.mockup{
+    width: 1250px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    .one_img,.two_img,.three_img,.four_img,.dot_two,.dot{
+        position: absolute;
+    }
+    .layer{
+        position: relative !important;
+    }
+    .one_img{
+        right: -100px;
+        bottom: 315px;
+    }
+    .two_img{
+        bottom: 350px;
+        left: 370px;
+        .dot{
+            left: -6px;
+            bottom: -6px;
+            z-index: -2;
+        }
+    }
+    .three_img{
+        bottom: -380px;
+        left: 0;
+    }
+    .four_img{
+        right: 112px;
+        bottom: -258px;
+        .dot_two{
+            right: -25px;
+            top: -25px;
+            z-index: -2;
+        }
+    }
+}
+.demo_content{
+    padding-top: 6px;
+    h2{
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    p{
+        padding-right: 100px;
+        margin-bottom: 34px;
+    }
+}
+.theme_btn{
+    font-size: 16px;
+    padding: 10px 29px;
+    border: 2px solid $blue;
+    background: #e9f1fc;
+    font-weight: 500;
+    display: inline-block;
+    color: $blue;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    &:hover{
+        box-shadow: 0px 10px 20px 0px rgb(12, 70, 141, 0.2);
+        background: $blue;
+        color: #fff;
+        border-color: $blue;
+    }
+}
+
+
+/*============== demo_area css =============*/
+.demo_area{
+    .custom_container{
+        padding-left: 136px;
+        padding-right: 136px;
+        .row{
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+        .col-lg-4{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+.sec_title{
+    margin-bottom: 78px;
+    h5{
+        color: $blue;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}
+.demo_item{
+    text-align: center;
+    transition: all 0.3s linear;
+    margin-bottom: 25px;
+    position: relative;
+    .badge-new {
+        position: absolute;
+        right: 0;
+        background: #ff0000;
+        color: #fff;
+        padding: 2px 20px;
+        border-radius: 4px 0 0 4px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .image{
+        border-radius: 6px;
+        overflow: hidden;
+        display: block;
+        box-shadow: 0 20px 50px 0 rgba(2, 14, 50, 0.1);
+        img{
+            max-width: 100%;
+        }
+    }
+    h4{
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 37px;
+        transition: color 0.2s linear;
+    }
+    &.coming_soon{
+        .image{
+            position: relative;
+            &:before{
+                content: "Coming Soon";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(16, 179, 214, 0.7);
+                font-size: 30px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+            }
+        }
+    }
+    &:hover{
+        transform: translateY(-30px);
+        h4{
+            color: $blue;
+        }
+    }
+}
+
+
+/*============= demo_action_area css ===========*/
+.demo_action_area{
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient( -90deg, rgb(16,179,214) 0%, rgb(29,39,70) 100%);
+    padding: 148px 0px;
+    overflow: hidden;
+    &:before{
+        position: absolute;
+        content: "";
+        background: url("../image/star_bg.png") no-repeat scroll center 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    h2{
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .round{
+        position: absolute;
+        right: 0;
+        top: 70px;
+        z-index: -1;
+    }
+}
+.theme_btn_white{
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    color: $blue;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 17px 54px;
+    box-shadow: 0px 20px 30px 0px rgba(79, 35, 35, 0.15);
+    transition: all 0.2s linear;
+    &:hover{
+        box-shadow: none;
+    }
+}
+
+
+.utility_area{
+    background: #f6fbfc;
+    padding: 100px 0 80px;
+    
+    .sec_title{
+        margin-bottom: 50px;
+    }
+    .row{
+        display: block;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .slick-dots{
+        margin-top: 20px;
+        position: relative;
+        bottom: 0;
+        li{
+            width: auto;
+            height: auto;
+            button{
+                width: 8px;
+                height: 8px;
+                padding: 0px;
+                border-radius: 50%;
+                background: #dae3e5;
+                margin: 0;
+                transition: all 0.2s linear;
+                &:before{
+                    display: none;
+                }
+            }
+            &.slick-active{
+                button{
+                    background: $blue;
+                }
+            }
+        }
+    }
+}
+.utility_slider{
+    margin-bottom: 0 !important;
+    .item{
+        padding: 20px 20px 34px;
+        .utility_img{
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0px 15px 23px 0px rgba(2, 14, 50, 0.1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: all 0.3s linear;
+            &:before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $blue;
+                z-index: 0;
+                opacity: 0;
+                transition: opacity 0.3s linear;
+            }
+            &:hover{
+                transform: translateY(-20px);
+                &:before{
+                    opacity: 0.50;
+                }
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+/*========== features_area css =========*/
+.features_area{
+    padding: 50px 0px;
+    padding-top: 120px;
+}
+.pr_70{
+    padding-right: 85px;
+}
+.pr_50{
+    padding-right: 50px;
+}
+.pl_35{
+    padding-left: 35px;
+}
+.pl_100{
+    padding-left: 100px;
+}
+.features_item{
+    margin-bottom: 72px;
+    img{
+        margin-bottom: 32px;
+    }
+    h5{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    p{
+        color: #6b707f;
+        margin-bottom: 0;
+    }
+}
+
+
+/*========== demo_footer css ===========*/
+.demo_footer{
+    background: #f6fbfc;
+    position: relative;
+    padding: 150px 0;
+    .leaf_top,.leaf_bottom,.man{
+        position: absolute;
+    }
+    .leaf_top{
+        top: 0;
+        left: 60px;
+    }
+    .man{
+        left: 155px;
+        bottom: 160px;
+    }
+    .leaf_bottom{
+        right: 0;
+        bottom: 0;
+    }
+    h2{
+        font-size: 50px;
+        line-height: 70px;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    .purchase_btn{
+        display: inline-block;
+        padding: 15px 65px;
+    }
+}

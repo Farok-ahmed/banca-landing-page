@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+} 
+a{
+    text-decoration:none;
+    transition: all 0.3s ease-in-out;
+    &:hover, &:focus{
+       text-decoration:none;
+       outline: none;
+        color: $blue;
+    }
+}
+
+body{
+    line-height: 26px;
+    font-size: 16px;
+    height: 100%;
+    font-family: $rob;
+    font-weight: 400; 
+    color: #6b707f;
+}
+:focus{
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-weight: 500;
+    font-family: $rob;
+    color: $h_title;
+}
+
+button:focus{
+    outline: none;
+}
+
+.body_wrapper{
+    overflow: hidden;
+}
+
+.sec_pad{
+    padding: 100px 0px;
+}
+
+
+.container{
+    @media (min-width:1200px){
+        max-width: 1200px;
+    }
+}
+.custom_container{
+    @media (min-width:1640px){
+        max-width: 1640px;
+    }
+}
+.section_gap{
+    padding: 120px 0px;
+}
+
+/*===== section title scss ======*/
+
+
